@@ -16,10 +16,6 @@ func main() {
 	if err != nil {
 		panic(err.Error())
 	}
-	//body, err := ioutil.ReadAll(res.Body)
-	//if err != nil {
-	//		panic(err.Error())
-	//	}
 	decoder := json.NewDecoder(res.Body)
 	var jsonResponse readStruct
 	err = decoder.Decode(&jsonResponse)
