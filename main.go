@@ -7,7 +7,6 @@ import (
 )
 
 type readStruct struct {
-	Env     string `json:"env"`
 	Version string `json:"version"`
 }
 
